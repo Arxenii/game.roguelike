@@ -3,6 +3,12 @@ use specs::prelude::*;
 use specs_derive::Component;
 use std::cmp::{max, min};
 
+#[derive(PartialEq, Copy, Clone)]
+enum TileType {
+    Wall,
+    Floor,
+}
+
 #[derive(Component, Debug)]
 struct Player {}
 
