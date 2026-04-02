@@ -9,6 +9,10 @@ enum TileType {
     Floor,
 }
 
+pub fn xy_idx(x: i32, y: i32) -> usize {
+    (y as usize * 80) + x as usize
+}
+
 #[derive(Component, Debug)]
 struct Player {}
 
